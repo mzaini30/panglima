@@ -5,3 +5,10 @@ body {
 .container {
 	max-width: 800px;
 }
+
+.hasil {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
