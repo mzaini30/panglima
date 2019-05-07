@@ -55,3 +55,9 @@ img {
 .panel-body {
 	padding: 0;
 }
+
+.bukan-input {
+	border: none;
+	background: inherit;
+	/*width: auto;*/
+}
