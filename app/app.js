@@ -51,6 +51,15 @@ hitung = function(){
 			// 	'float': 'left'
 			// })
 		})
+		teks_whatsapp = ''
+		teks_whatsapp += 'https://wa.me/6281545143654?text=Assalamualaikum.%20Saya%20mau%20pesan:%0A'
+		for (n in data_pembelian){
+			barang = data_pembelian[n].nama
+			barang = barang.replace(/ /g, '%20').replace(/:/g, '%3A')
+			teks_whatsapp += '-%20' + barang
+			// teks_whatsapp += '-%20' + (data_pembelian[n].nama).replace()
+		}
+		$('.pesan').attr('href', teks_whatsapp)
 		// mainkan_cleave()
 		// console.log(hasil)
 	})
