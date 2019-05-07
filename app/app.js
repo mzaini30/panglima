@@ -21,16 +21,26 @@ $('.grid').imagesLoaded( function() {
 // 	'padding-right': '10px'
 // })
 
+hitung = function(){
+
+}
+
 $('input').on('keyup', function(){
 	$('.keterangan').each(function(){
 		if ($(this).find('.banyaknya').val() != ''){
-			$(this).css({
-				'background': 'aqua'
-			})
+			// ini kalau banyaknya diisi
+			$(this).addClass('ini-dihitung')
+			hitung()
+			// $(this).css({
+			// 	'background': 'aqua'
+			// })
 		} else {
-			$(this).css({
-				'background': 'transparent'
-			})
+			// ini kalau banyaknya kosong
+			$(this).removeClass('ini-dihitung')
+			hitung()
+			// $(this).css({
+			// 	'background': 'transparent'
+			// })
 		}
 	})
 })
