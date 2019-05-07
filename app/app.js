@@ -2,6 +2,7 @@ $('.bukan-input').each(function(){
 	var cleave = new Cleave(this, {
 		prefix: 'Rp ',
 	    numeral: true,
+	    delimiter: '.',
 	    numeralThousandsGroupStyle: 'thousand'
 	});
 	$(this).width($(this).parent().width())
