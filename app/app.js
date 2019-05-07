@@ -46,7 +46,10 @@ hitung = function(){
 			    delimiter: '.',
 			    numeralThousandsGroupStyle: 'thousand'
 			});
-			$(this).width($('.container').width())
+			// $(this).width($(this).parent().width())
+			// $(this).css({
+			// 	'float': 'left'
+			// })
 		})
 		// mainkan_cleave()
 		// console.log(hasil)
