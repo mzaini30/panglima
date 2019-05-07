@@ -56,7 +56,7 @@ hitung = function(){
 		for (n in data_pembelian){
 			barang = data_pembelian[n].nama
 			barang = barang.replace(/ /g, '%20').replace(/:/g, '%3A')
-			teks_whatsapp += '-%20' + barang + '%0A'
+			teks_whatsapp += '-%20' + barang + ' (' + data_pembelian[n].banyaknya + ') %0A'
 			// teks_whatsapp += '-%20' + (data_pembelian[n].nama).replace()
 		}
 		$('.pesan').attr('href', teks_whatsapp)
