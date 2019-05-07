@@ -40,10 +40,12 @@
 				<div class="grid-item">
 					<div class="panel panel-default">
 						<div class="panel-body">
-							<img src="{{ site.baseurl }}/gambar/{{ x.gambar }}">
-							<p>{{ x.judul }}</p>
-							<p><input type="tel" value="{{ x.harga }}" disabled="" class="bukan-input" name=""></p>
-							<p><input type="tel" placeholder="Berapa banyak" class="form-control"></p>
+							<p><img src="{{ site.baseurl }}/gambar/{{ x.gambar }}"></p>
+							<div class="keterangan">
+								<p>{{ x.judul }}</p>
+								<p><input type="tel" value="{{ x.harga }}" disabled="" class="bukan-input" name=""></p>
+								<p><input type="tel" placeholder="Berapa banyak" class="form-control"></p>
+							</div>
 						</div>
 					</div>
 				</div>

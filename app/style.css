@@ -29,6 +29,11 @@ img {
 	margin-top: 20px;
 }
 
+/*.keterangan {
+	padding-left: 10px;
+	padding-right: 10px;
+}*/
+
 .pesan {
 	float: right;
 	margin-top: 7px;
@@ -54,6 +59,15 @@ img {
 
 .panel-body {
 	padding: 0;
+}
+
+.panel-body img {
+	width: 100%;
+}
+
+.keterangan {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .bukan-input {
