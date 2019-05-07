@@ -83,3 +83,7 @@ img {
 .coret {
 	text-decoration: line-through;
 }
+
+.tebal {
+	font-weight: bold;
+}

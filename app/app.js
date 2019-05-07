@@ -4,7 +4,7 @@ $('.bukan-input').each(function(){
 	    numeral: true,
 	    numeralThousandsGroupStyle: 'thousand'
 	});
-	$(this).width($(this).width() - 20)
+	$(this).width($(this).parent().width())
 })
 
 $('.grid').imagesLoaded( function() {
