@@ -20,3 +20,17 @@ $('.grid').imagesLoaded( function() {
 // 	'padding-left': '10px',
 // 	'padding-right': '10px'
 // })
+
+$('input').on('keyup', function(){
+	$('.keterangan').each(function(){
+		if ($(this).find('.banyaknya').val() != ''){
+			$(this).css({
+				'background': 'aqua'
+			})
+		} else {
+			$(this).css({
+				'background': 'transparent'
+			})
+		}
+	})
+})
