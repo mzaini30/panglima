@@ -3,8 +3,21 @@ body {
 	padding-bottom: 70px;
 }
 
+img {
+	max-width: 100%;
+}
+
+.grid-item {
+	width: 50%;
+}
+
 .container {
 	max-width: 800px;
+}
+
+.container-isi {
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .hasil {
@@ -25,4 +38,16 @@ body {
 	float: left;
 	/*margin: 0;*/
 	padding-top: 4px;
+}
+
+@media (min-width: 800px){
+	.grid-item {
+		width: 33.3%;
+	}
+}
+
+.panel {
+	padding: 0;
+	margin-left: 10px;
+	margin-right: 10px;
 }

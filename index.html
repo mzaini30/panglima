@@ -31,14 +31,18 @@
 		    </div> -->
 		</div>
 	</div>
-	<div class="container">
+	<div class="container container-isi">
 		<div class="grid">
 			{% assign isi = site.isi | sort: "judul" %}
 			{% for x in isi %}
 				<div class="grid-item">
-					<img src="{{ site.baseurl }}/gambar/{{ x.gambar }}">
-					<p>{{ x.judul }}</p>
-					<p>{{ x.harga }}</p>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<img src="{{ site.baseurl }}/gambar/{{ x.gambar }}">
+							<p>{{ x.judul }}</p>
+							<p>{{ x.harga }}</p>
+						</div>
+					</div>
 				</div>
 			{% endfor %}
 		</div>
