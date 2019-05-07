@@ -46,7 +46,7 @@
 								{% if x.harga_awal %}
 									<p><input type="tel" value="{{ x.harga_awal }}" disabled="" class="bukan-input coret" name=""></p>
 								{% endif %}
-								<p><input type="tel" value="{{ x.harga }}" disabled="" class="bukan-input tebal harga" name=""></p>
+								<p><input type="tel" value="{{ x.harga }}" disabled="" class="bukan-input tebal harga" data-harga='{{ x.harga }}' name=""></p>
 								<p><input type="tel" placeholder="Berapa banyak" class="form-control banyaknya"></p>
 							</div>
 						</div>
