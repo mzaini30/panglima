@@ -4,6 +4,7 @@ $('.bukan-input').each(function(){
 	    numeral: true,
 	    numeralThousandsGroupStyle: 'thousand'
 	});
+	$(this).width($(this).width() - 20)
 })
 
 $('.grid').imagesLoaded( function() {
@@ -13,3 +14,8 @@ $('.grid').imagesLoaded( function() {
 		// columnWidth: 50
 	});
 });
+
+// $('.keterangan').css({
+// 	'padding-left': '10px',
+// 	'padding-right': '10px'
+// })
