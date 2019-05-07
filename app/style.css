@@ -75,3 +75,11 @@ img {
 	background: inherit;
 	/*width: auto;*/
 }
+
+.judul {
+	font-size: 18px;
+}
+
+.coret {
+	text-decoration: line-through;
+}

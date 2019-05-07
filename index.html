@@ -42,8 +42,11 @@
 						<div class="panel-body">
 							<p><img src="{{ site.baseurl }}/gambar/{{ x.gambar }}"></p>
 							<div class="keterangan">
-								<p>{{ x.judul }}</p>
-								<p><input type="tel" value="{{ x.harga }}" disabled="" class="bukan-input" name=""></p>
+								<p class="judul">{{ x.judul }}</p>
+								{% if x.harga_awal %}
+									<p><input type="tel" value="{{ x.harga_awal }}" disabled="" class="bukan-input coret" name=""></p>
+								{% endif %}
+								<p><strong><input type="tel" value="{{ x.harga }}" disabled="" class="bukan-input" name=""></strong></p>
 								<p><input type="tel" placeholder="Berapa banyak" class="form-control"></p>
 							</div>
 						</div>
